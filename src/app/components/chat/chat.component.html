@@ -1,0 +1,15 @@
+<!-- chat.component.html -->
+<app-header></app-header>
+<div class="chat">
+    <div *ngFor="let message of messages" class="message-container" [ngClass]="{'user-message': message.sender === 'User', 'bot-message': message.sender === 'Bot'}">
+        <div class="message" [ngClass]="{'user-message': message.sender === 'User', 'bot-message': message.sender === 'Bot'}">
+            <div class="sender-name">{{ message.sender }}</div>
+            <div class="message-content">{{ message.content }}</div>
+            <div class="message-timestamp">{{ message.timestamp | date:'shortTime' }}</div>
+        </div>
+    </div>
+</div>
+<div class="message-input">
+    <input type="text" [(ngModel)]="newMessage" placeholder="Type your message..." (keyup.enter)="sendMessage()">
+    <button>Adjuntar Imagen</button>
+</div>

@@ -1,0 +1,10 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+</style>
+
+<div class="container">
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <mat-form-field class="example-full-width">
+        <input matInput style="text-align:center;" placeholder="Enter your name" [(ngModel)]="username" (keypress)="onEnter($event)">
+    </mat-form-field>
+</div>

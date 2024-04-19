@@ -1,0 +1,14 @@
+.header {
+    background-color: #fbfff8; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px;
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.logo-container {
+    margin-bottom: 10px; /* Espacio entre el logo y el título */
+}
+
+.logo {
+    max-width: 300px; /* Tamaño del logo */
+}
