@@ -2,12 +2,12 @@
 
 .chat {
     overflow-y: auto;
-    max-height: 400px; /* ajusta según sea necesario */
+    max-height: 750px;
 }
 
 .message-container {
     display: flex;
-    flex-direction: column; /* Cambiado a columna para que los mensajes se apilen uno encima del otro */
+    flex-direction: column; 
 }
 
 .message {
@@ -20,12 +20,12 @@
 
 .user-message {
     align-self: flex-start;
-    background-color: #97c4a8;
+    background-color: #2e2b2b;
 }
 
 .bot-message {
     align-self: flex-end;
-    background-color: #007bff;
+    background-color: #9ad8a8;
     color: #383434;
 }
 
@@ -43,19 +43,20 @@
     flex: 1;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
 }
-
-.message-input button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .message-input button:hover {
-    background-color: #0056b3;
+    background-color: #7d9c44;
 }
 
+.fondo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}

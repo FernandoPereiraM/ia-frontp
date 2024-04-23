@@ -1,8 +1,10 @@
-<!-- chat.component.html -->
-<app-header></app-header>
+<app-nav></app-nav>
 <div class="chat">
-    <div *ngFor="let message of messages" class="message-container" [ngClass]="{'user-message': message.sender === 'User', 'bot-message': message.sender === 'Bot'}">
-        <div class="message" [ngClass]="{'user-message': message.sender === 'User', 'bot-message': message.sender === 'Bot'}">
+    <div class="fondo-container" *ngIf="showBackground">
+        <img src="assets/fondo.png" alt="fondo" class="fondo">
+    </div>
+    <div *ngFor="let message of messages" class="message-container" [ngClass]="{'user-message': message.sender === 'savedUsername', 'bot-message': message.sender === 'RecipeBot'}">
+        <div class="message" [ngClass]="{'user-message': message.sender === 'savedUsername', 'bot-message': message.sender === 'RecipeBot'}">
             <div class="sender-name">{{ message.sender }}</div>
             <div class="message-content">{{ message.content }}</div>
             <div class="message-timestamp">{{ message.timestamp | date:'shortTime' }}</div>
@@ -11,5 +13,11 @@
 </div>
 <div class="message-input">
     <input type="text" [(ngModel)]="newMessage" placeholder="Type your message..." (keyup.enter)="sendMessage()">
-    <button>Adjuntar Imagen</button>
+    <button mat-fab>
+        <mat-icon>image</mat-icon>
+    </button>
+    <button mat-fab>
+        <mat-icon>send</mat-icon>
+    </button>
 </div>
+<app-footer></app-footer>

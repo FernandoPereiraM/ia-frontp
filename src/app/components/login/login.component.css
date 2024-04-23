@@ -6,16 +6,16 @@
 }
 
 .logo {
-    width: 400px; /* Ajusta el tamaño del logo según sea necesario */
-    margin-bottom: 20px; /* Espacio entre el logo y el campo de entrada */
+    width: 300px; 
+    margin-bottom: 20px;
 }
 
 mat-form-field {
     font-size: 40px;
-    width: 600px; /* Ancho del campo de entrada */
-    margin-bottom: 40px; /* Espacio entre el campo de entrada y el botón */
+    width: 600px;
+    margin-bottom: 40px;
 }
 
 button {
-    width: 150px; /* Ancho del botón */
+    width: 150px;
 }

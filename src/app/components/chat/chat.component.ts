@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ChatMessage } from '../../interface/chat-message.interface';
 
 @Component({
@@ -6,12 +6,17 @@ import { ChatMessage } from '../../interface/chat-message.interface';
   templateUrl: './chat.component.html',
   styleUrls: ['./chat.component.css']
 })
-export class ChatComponent {
+export class ChatComponent implements OnInit{
   messages: ChatMessage[] = [];
   newMessage: string = '';
+  showBackground: boolean = true;
   savedUsername = localStorage.getItem('username') ?? 'User';
 
   constructor() { 
+  }
+
+  ngOnInit(): void {
+    this.savedUsername;
   }
 
   sendMessage() {
@@ -21,7 +26,7 @@ export class ChatComponent {
         content: this.newMessage,
         timestamp: new Date()
       });
-
+      this.showBackground = true;
       // Respuesta del bot
       this.botResponse();
 
@@ -30,7 +35,7 @@ export class ChatComponent {
   }
 
   botResponse() {
-    // Simulación de respuesta del bot (puedes reemplazar esto con la lógica real del bot)
+    // Simulación de respuesta del bot
     const botMessage: ChatMessage = {
       sender: 'RecipeBot',
       content: '¡Hola! Soy un bot y estoy aquí para ayudarte.',
