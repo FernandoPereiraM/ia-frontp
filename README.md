@@ -17,25 +17,20 @@ To get started with this project, follow these steps:
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
 
-## 📁 Project Structure
+## 📝 Usage
 
-- `src/`: Contains the source code of the project.
-  - `components/`: Contains reusable UI components.
-  - `pages/`: Contains different pages of the application.
-  - `services/`: Contains services for handling data fetching and processing.
-  - `styles/`: Contains global stylesheets.
-- `public/`: Contains static assets such as images and fonts.
-- `package.json`: Contains project metadata and dependencies.
-- `README.md`: This file you are reading right now!
+Once the application is up and running, you can start using it to identify fruits, find recipes, and more.
 
-## 🛠️ Technologies Used
+## 🤝 Contribution
 
-- React: JavaScript library for building user interfaces.
-- Redux: State management library.
-- Axios: Promise-based HTTP client.
-- Material-UI: React UI framework.
-- React Router: Declarative routing for React applications.
+If you'd like to contribute to this project, follow these steps:
 
-## 📝 License
+1. Fork the repository
+2. Create a new branch for your feature: `git checkout -b new-feature`
+3. Make your changes and commit: `git commit -am 'Add a new feature'`
+4. Push your changes: `git push origin new-feature`
+5. Open a Pull Request on GitHub
+
+## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
