@@ -1,27 +1,40 @@
-# IaFrontp
+# Recipe.io - Aplicación Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+Recipe.io es una aplicación web construida con Angular, diseñada para hacer que tu experiencia en la cocina sea más fácil y placentera.
 
-## Development server
+## Demostración
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Aquí puedes encontrar una demostración de Recipe.io:
 
-## Code scaffolding
+[![Recipe.io]]([enlace_al_video](https://www.youtube.com/watch?v=cifR2qrdQ18))
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación
 
-## Build
+Para ejecutar esta aplicación localmente, asegúrate de tener instalado Node.js y npm. Luego, sigue estos pasos:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clona este repositorio: `git clone https://github.com/tu_usuario/tu_proyecto.git`
+2. Navega al directorio del proyecto: `cd tu_proyecto`
+3. Instala las dependencias: `npm install`
+4. Ejecuta la aplicación: `ng serve`
+5. Abre tu navegador y navega a `http://localhost:4200/`
 
-## Running unit tests
+## Uso
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Una vez que la aplicación esté en funcionamiento, puedes comenzar a usarla para identificar frutas, encontrar recetas y más.
 
-## Running end-to-end tests
+## Contribución
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Si deseas contribuir a este proyecto, sigue estos pasos:
 
-## Further help
+1. Haz un fork del repositorio
+2. Crea una nueva rama para tu función: `git checkout -b nueva-funcion`
+3. Realiza tus cambios y haz commit: `git commit -am 'Agrega una nueva función'`
+4. Sube tus cambios: `git push origin nueva-funcion`
+5. Abre un Pull Request en GitHub
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Licencia
+
+Indica la licencia bajo la cual se distribuye este proyecto.
+```
+
+Asegúrate de personalizar los enlaces y la información según corresponda a tu proyecto.
