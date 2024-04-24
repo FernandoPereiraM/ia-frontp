@@ -6,7 +6,8 @@ Recipe.io es una aplicación web construida con Angular, diseñada para hacer qu
 
 Aquí puedes encontrar una demostración de Recipe.io:
 
-[![Recipe.io]]([enlace_al_video](https://www.youtube.com/watch?v=cifR2qrdQ18))
+[![Demostración de Recipe.io](https://img.youtube.com/vi/cifR2qrdQ18/0.jpg)](https://www.youtube.com/watch?v=cifR2qrdQ18)
+
 
 ## Instalación
 
