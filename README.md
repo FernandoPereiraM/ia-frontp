@@ -6,7 +6,7 @@ Recipe.io is an innovative digital assistant designed to make your cooking exper
 
 Here you can find a demo of Recipe.io:
 
-[![Recipe.io Demo](https://img.youtube.com/vi/cifR2qrdQ18/0.jpg)](https://www.youtube.com/watch?v=cifR2qrdQ18)
+[![Recipe.io Demo](https://github.com/FernandoPereiraM/ia-frontp/blob/master/src/assets/Recipes.io.gif)](https://www.youtube.com/watch?v=cifR2qrdQ18)
 
 ## 🚀 Getting Started
 
