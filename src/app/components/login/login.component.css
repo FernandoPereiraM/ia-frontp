@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    height: 100vh;
+    font-family: 'Jersey 20', sans-serif;
 }
 
 .logo {
-    width: 300px; 
-    margin-bottom: 20px;
+    max-width: 450px;
+    margin-bottom: 10px;
 }
 
 mat-form-field {
@@ -16,6 +19,7 @@ mat-form-field {
     margin-bottom: 40px;
 }
 
-button {
-    width: 150px;
+.mat-toolbar {
+    background-color: rgb(154, 182, 91);
+    color: rgb(0, 0, 0);
 }

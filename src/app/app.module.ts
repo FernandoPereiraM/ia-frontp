@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { NavComponent } from './components/nav/nav.component';
+import { SavedRecipesComponent } from './components/saved-recipes/saved-recipes.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavComponent } from './components/nav/nav.component';
     AboutComponent,
     NavComponent,
     ChatComponent,
-    LoginComponent
+    LoginComponent,
+    SavedRecipesComponent
   ],
   imports: [
     BrowserModule,

@@ -43,5 +43,10 @@ export class ChatComponent implements OnInit{
     };
     this.messages.push(botMessage);
   }
+
+  onFileSelected(event: any) {
+    const selectedFile = event.target.files[0];
+    // -------------
+  }
 }
 

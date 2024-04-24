@@ -1,10 +1,10 @@
 .mat-toolbar {
-  background-color: rgb(70, 74, 82);
-  color: white;
+  background-color: rgb(154, 182, 91);
+  color: rgb(0, 0, 0);
 }
 
 .mat-button {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .spacer {
@@ -17,7 +17,7 @@
 }
 
 .logo {
-  width: 100px; /* ajusta el tamaño según sea necesario */
+  width: 100px;
   height: auto;
-  margin-right: 10px; /* ajusta el margen según sea necesario */
+  margin-right: 10px;
 }

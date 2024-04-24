@@ -1,10 +1,12 @@
 <mat-toolbar color="primary">
   <div class="logo-container">
-    <img src="assets/logo2.png" alt="Logo" class="logo">
-    <span class="user-greeting">Hello {{ savedUsername }}, Welcome to Recipe.io!</span>
+    <img src="assets/plantv2.png" alt="Logo" class="logo">
+    <span class="user-greeting">Hello {{ savedUsername ? savedUsername + ',' : 'Welcome!' }} Welcome!</span>
   </div>
   <div class="spacer"></div>
-  <a mat-button>Home</a>
-  <a mat-button>About</a>
-  <a mat-button>Contact</a>
+  <a mat-button routerLink="/home">Home</a>
+  <a mat-button routerLink="/myrecipes">My Recipes</a>
+  <a mat-button routerLink="/chat">Chat</a>
+  <a mat-button routerLink="/about">About</a>
+  <button mat-button (click)="exit()">Exit</button>
 </mat-toolbar>
