@@ -1,27 +1,36 @@
-# IaFrontp
+# 🍽️ Recipe.io - Angular App 🥦
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+Recipe.io is an innovative digital assistant designed to make your cooking experience easier and more enjoyable.
 
-## Development server
+## 🎬 Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Here you can find a demo of Recipe.io:
 
-## Code scaffolding
+[![Recipe.io Demo](https://github.com/FernandoPereiraM/ia-frontp/blob/master/src/assets/Recipes.io.gif)](https://www.youtube.com/watch?v=cifR2qrdQ18)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Getting Started
 
-## Build
+To get started with this project, follow these steps:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone this repository: `git clone https://github.com/FernandoPereiraM/ia-frontp.git`
+2. Navigate to the project directory: `cd ia-frontp`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
 
-## Running unit tests
+## 📝 Usage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Once the application is up and running, you can start using it to identify fruits, find recipes, and more.
 
-## Running end-to-end tests
+## 🤝 Contribution
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+If you'd like to contribute to this project, follow these steps:
 
-## Further help
+1. Fork the repository
+2. Create a new branch for your feature: `git checkout -b new-feature`
+3. Make your changes and commit: `git commit -am 'Add a new feature'`
+4. Push your changes: `git push origin new-feature`
+5. Open a Pull Request on GitHub
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
