@@ -1,69 +1,69 @@
 .about-card {
-  padding-top: 20px;
-  margin-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 .banner-container {
-  text-align: center;
+    text-align: center;
 }
 
 .banner-image {
-  max-width: 80%;
-  max-height: 200px;
-  width: auto;
-  height: auto;
+    max-width: 80%;
+    max-height: 200px;
+    width: auto;
+    height: auto;
 }
 
 .about-content {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .about-description {
-  text-align: justify;
-  font-size: 18px;
-  line-height: 1.5;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .about-list {
-  padding-left: 0;
+    padding-left: 0;
 }
 
 .mat-icon {
-  vertical-align: middle;
-  margin-right: 8px;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 .mat-list-item {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .list-item-content {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .list-item-content mat-icon {
-  margin-right: 12px;
+    margin-right: 12px; 
 }
 
 .list-item-content div {
-  font-size: 16px;
-  line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 h1 {
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  color: #333;
-  text-transform: uppercase;
+    text-align: center;
+    font-size: 36px; 
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
 }
 p {
-  text-align: center;
+    text-align: center;
 }
 
 .about-content {
-  max-height: 550px; /* Altura máxima del contenedor */
-  overflow-y: auto; /* Agrega una barra de desplazamiento vertical si el contenido excede la altura máxima */
+    max-height: 550px; /* Altura máxima del contenedor */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si el contenido excede la altura máxima */
 }

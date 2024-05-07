@@ -17,10 +17,7 @@ export class ChatComponent implements OnInit {
   selectedImageUrl: string | ArrayBuffer | null = null;
   selectedImageUrlForMessage: string | ArrayBuffer | null = null;
 
-  constructor(
-    private authService: AuthService,
-    private router: Router,
-  ) {
+  constructor(private authService: AuthService, private router: Router) {
     this.authService.formDataPrediction = new PredictionModel();
   }
 
@@ -77,12 +74,12 @@ export class ChatComponent implements OnInit {
       },
       (error) => {
         console.error('Error al enviar la imagen:', error);
-      },
+      }
     );
   }
   saveRecipe() {
     const botMessageIndex = this.messages.findIndex(
-      (message) => message.sender === 'RecipeBot',
+      (message) => message.sender === 'RecipeBot'
     );
     if (botMessageIndex !== -1) {
       const currentBotMessage = this.messages[botMessageIndex];

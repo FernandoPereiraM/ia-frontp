@@ -5,13 +5,13 @@ import { RecipeService } from '../../service-api/recipe.service';
 @Component({
   selector: 'app-recipe-detail',
   templateUrl: './recipe-detail.component.html',
-  styleUrls: ['./recipe-detail.component.css'],
+  styleUrls: ['./recipe-detail.component.css']
 })
 export class RecipeDetailComponent implements OnInit {
   recipe: Recipe | undefined;
   dataLoaded = false;
 
-  constructor(private recipeService: RecipeService) {}
+  constructor(private recipeService: RecipeService) { }
 
   ngOnInit(): void {
     this.getRecipeDetails();
@@ -20,10 +20,8 @@ export class RecipeDetailComponent implements OnInit {
   getRecipeDetails(): void {
     const storedRecipeId = localStorage.getItem('recipeId');
     if (storedRecipeId === null) {
-      console.error(
-        'No se encontró ningún ID de receta en el almacenamiento local',
-      );
-      return;
+        console.error('No se encontró ningún ID de receta en el almacenamiento local');
+        return;
     }
     const recipeId = parseInt(storedRecipeId);
     this.recipeService.getRecipe(parseInt(storedRecipeId)).subscribe(
@@ -34,7 +32,9 @@ export class RecipeDetailComponent implements OnInit {
       },
       (error) => {
         console.error('Error:', error);
-      },
+      }
     );
   }
 }
+
+

@@ -30,7 +30,7 @@ import { SavedRecipesComponent } from './components/saved-recipes/saved-recipes.
     LoginComponent,
     SavedRecipesComponent,
     RecipeDetailComponent,
-    CreateRecipeComponent,
+    CreateRecipeComponent
   ],
   imports: [
     BrowserModule,
@@ -38,10 +38,12 @@ import { SavedRecipesComponent } from './components/saved-recipes/saved-recipes.
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    MarkdownModule.forRoot(),
+    MarkdownModule.forRoot()
   ],
-  providers: [provideAnimationsAsync()],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule {}
+export class AppModule { }

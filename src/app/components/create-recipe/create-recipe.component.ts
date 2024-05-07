@@ -6,11 +6,12 @@ import { RecipeService } from '../../service-api/recipe.service';
 @Component({
   selector: 'app-create-recipe',
   templateUrl: './create-recipe.component.html',
-  styleUrls: ['./create-recipe.component.css'],
+  styleUrls: ['./create-recipe.component.css']
 })
 export class CreateRecipeComponent implements OnInit {
+
   scontent: string | null = null;
-  username: string | null = '';
+  username: string | null = "";
 
   ngOnInit() {
     this.scontent = localStorage.getItem('savedRecipe');
@@ -18,21 +19,18 @@ export class CreateRecipeComponent implements OnInit {
   }
 
   recipe: Recipe = {
-    id: 0,
+    id:0,
     name: '',
     description: '',
     content: '',
-    username: '',
+    username: ''
   };
 
-  constructor(
-    private Router: Router,
-    private recipeService: RecipeService,
-  ) {}
+  constructor(private Router: Router,private recipeService: RecipeService) {}
 
   submitForm() {
     this.recipe.content = this.scontent || '';
-    this.recipe.username = this.username || '';
+    this.recipe.username = this.username || "";
     this.recipeService.createRecipe(this.recipe).subscribe(
       (response) => {
         console.log('Receta creada exitosamente:', response);
@@ -40,8 +38,8 @@ export class CreateRecipeComponent implements OnInit {
       },
       (error) => {
         console.error('Error al crear la receta:', error);
-        console.error('Objeto', this.recipe);
-      },
+        console.error('Objeto',this.recipe);
+      }
     );
   }
 }

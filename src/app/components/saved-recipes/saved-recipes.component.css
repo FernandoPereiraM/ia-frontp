@@ -1,34 +1,34 @@
 /* Center the content vertically and horizontally */
 body,
 html {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Ensure the banner takes up the full width */
 .banner-container {
-  flex: 1;
-  /* Grow to fill available space */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    flex: 1;
+    /* Grow to fill available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Ensure the saved recipes section takes up the remaining space */
 .saved-recipes {
-  flex: 1;
-  /* Grow to fill available space */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    flex: 1;
+    /* Grow to fill available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Set a maximum width for the table */
 .mat-table {
-  max-width: 800px;
-  /* Adjust as needed */
-  width: 100%;
-  /* Ensure the table takes up full width */
+    max-width: 800px;
+    /* Adjust as needed */
+    width: 100%;
+    /* Ensure the table takes up full width */
 }

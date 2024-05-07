@@ -9,20 +9,16 @@ import { ConfirmationDialogComponent } from '../confirmation-dialog/confirmation
 @Component({
   selector: 'app-saved-recipes',
   templateUrl: './saved-recipes.component.html',
-  styleUrls: ['./saved-recipes.component.css'],
+  styleUrls: ['./saved-recipes.component.css']
 })
-export class SavedRecipesComponent implements OnInit {
+export class SavedRecipesComponent implements OnInit{
   ngOnInit(): void {
     this.getUserRecipes();
   }
   userRecipes: any[] = [];
   recipeid: string = '';
 
-  constructor(
-    private router: Router,
-    private dialog: MatDialog,
-    private recipeService: RecipeService,
-  ) {}
+  constructor(private router: Router, private dialog: MatDialog, private recipeService: RecipeService) { }
 
   displayedColumns: string[] = ['name', 'date', 'view', 'delete'];
   dataSource = new MatTableDataSource<Recipe>(this.userRecipes);
@@ -35,10 +31,10 @@ export class SavedRecipesComponent implements OnInit {
   openConfirmationDialog(recipe: Recipe): void {
     const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
       width: '250px',
-      data: { recipeName: recipe.name },
+      data: { recipeName: recipe.name }
     });
-
-    dialogRef.afterClosed().subscribe((result) => {
+  
+    dialogRef.afterClosed().subscribe(result => {
       if (result) {
         this.delRecipe(recipe);
       }
@@ -50,9 +46,11 @@ export class SavedRecipesComponent implements OnInit {
     this.recipeService.getUserRecipes(savedUsername).subscribe(
       (recipes) => {
         this.userRecipes = recipes;
-        console.log(this.userRecipes);
+        console.log(this.userRecipes)
       },
-      (error) => {},
+      (error) => {
+
+      }
     );
   }
 
