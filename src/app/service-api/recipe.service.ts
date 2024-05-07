@@ -4,13 +4,12 @@ import { Observable } from 'rxjs/internal/Observable';
 import { Recipe } from '../interface/recipe';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RecipeService {
-
   apiUrl = 'http://127.0.0.1:8000';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   // Método para crear una nueva receta
   createRecipe(recipeData: any) {
@@ -27,5 +26,4 @@ export class RecipeService {
   getRecipe(recipeId: number): Observable<Recipe> {
     return this.http.get<Recipe>(`${this.apiUrl}/recipes/${recipeId}`);
   }
-
 }

@@ -12,7 +12,10 @@ export class LoginComponent {
   username: string = '';
   isUsernameSaved: boolean = false;
 
-  constructor(private router: Router, private recipeService: RecipeService) {
+  constructor(
+    private router: Router,
+    private recipeService: RecipeService,
+  ) {
     const savedUsername = localStorage.getItem('username');
     if (savedUsername) {
       this.username = savedUsername;
@@ -41,7 +44,7 @@ export class LoginComponent {
         },
         (error) => {
           console.error('Error:', error);
-        }
+        },
       );
     }
   }
