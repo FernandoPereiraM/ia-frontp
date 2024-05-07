@@ -1,4 +1,4 @@
-# 🍽️ Recipe.io - Angular App 🥦
+# 🍽️ Recipe.io - Angular Front App 🥦
 
 Recipe.io is an innovative digital assistant designed to make your cooking experience easier and more enjoyable.
 

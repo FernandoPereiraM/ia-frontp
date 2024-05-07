@@ -1,0 +1,11 @@
+<app-nav></app-nav>
+<mat-card class="about-card" *ngIf="recipe">
+    <div class="banner-container">
+        <img src="assets/animation_4.gif" alt="Banner" class="banner-image">
+    </div>
+    <mat-card-content class="about-content">
+        <h1>{{ recipe.name }}</h1>
+        <markdown>{{ recipe.content }}</markdown>
+    </mat-card-content>
+</mat-card>
+<app-footer></app-footer>

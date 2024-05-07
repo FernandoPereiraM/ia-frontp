@@ -3,11 +3,21 @@
     <div class="fondo-container" *ngIf="showBackground">
         <img src="assets/animation_2.gif" alt="Animation" class="animation">
     </div>
-    <div *ngFor="let message of messages" class="message-container" [ngClass]="{'user-message': message.sender === 'savedUsername', 'bot-message': message.sender === 'RecipeBot'}">
-        <div class="message" [ngClass]="{'user-message': message.sender === 'savedUsername', 'bot-message': message.sender === 'RecipeBot'}">
+    <div *ngFor="let message of messages" class="message-container"
+        [ngClass]="{'user-message': message.sender === 'savedUsername', 'bot-message': message.sender === 'RecipeBot'}">
+        <div class="message"
+            [ngClass]="{'user-message': message.sender === 'savedUsername', 'bot-message': message.sender === 'RecipeBot'}">
             <div class="sender-name">{{ message.sender }}</div>
             <div class="message-content">{{ message.content }}</div>
+            <div class="message-image" *ngIf="message.image">
+                <img [src]="message.image" alt="Imagen">
+            </div>
             <div class="message-timestamp">{{ message.timestamp | date:'shortTime' }}</div>
+            <!--  -->
+            <button mat-raised-button *ngIf="message.sender === 'RecipeBot'" (click)="saveRecipe()">
+                Save answer
+                <mat-icon class="black-icons">save</mat-icon>
+            </button>
         </div>
     </div>
 </div>
@@ -20,5 +30,8 @@
     <button mat-fab (click)="sendMessage()">
         <mat-icon class="black-icons">send</mat-icon>
     </button>
+</div>
+<div class="image-container" *ngIf="selectedImageUrl">
+    <img [src]="selectedImageUrl" alt="Imagen seleccionada" class="centered-image">
 </div>
 <app-footer></app-footer>

@@ -1,5 +1,6 @@
 export interface ChatMessage {
-    sender: string;
-    content: string;
-    timestamp: Date;
+  sender: string;
+  content: string;
+  image?: string | ArrayBuffer | null;
+  timestamp: Date;
 }

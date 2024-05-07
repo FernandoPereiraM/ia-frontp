@@ -1,0 +1,22 @@
+<app-nav></app-nav>
+<div class="banner-container">
+    <img src="assets/animation_4.gif" alt="Banner" class="banner-image">
+</div>
+<div class="main-content">
+    <div class="container">
+        <mat-form-field appearance="fill" class="custom-input">
+            <input matInput [(ngModel)]="recipe.name" placeholder="Título">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="custom-input">
+            <input matInput [(ngModel)]="recipe.description" placeholder="Descripción">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="custom-textarea">
+            <textarea matInput [(ngModel)]="scontent" placeholder="Contenido de la receta" rows="10" style="resize: none;"></textarea>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="submitForm()">Guardar</button>
+    </div>
+</div>
+<app-footer></app-footer>

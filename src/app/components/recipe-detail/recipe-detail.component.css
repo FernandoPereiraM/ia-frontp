@@ -1,5 +1,4 @@
 .about-card {
-  text-align: center;
   padding-top: 20px;
   margin-bottom: 20px;
 }
@@ -9,8 +8,8 @@
 }
 
 .banner-image {
-  max-width: 100%;
-  max-height: 250px;
+  max-width: 80%;
+  max-height: 200px;
   width: auto;
   height: auto;
 }
@@ -23,13 +22,6 @@
   text-align: justify;
   font-size: 18px;
   line-height: 1.5;
-}
-
-.about-footer {
-  text-align: center;
-  font-size: 17px;
-  line-height: 1.5;
-  margin-top: 10px;
 }
 
 .about-list {
@@ -58,4 +50,20 @@
 .list-item-content div {
   font-size: 16px;
   line-height: 1.5;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+p {
+  text-align: center;
+}
+
+.about-content {
+  max-height: 550px; /* Altura máxima del contenedor */
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical si el contenido excede la altura máxima */
 }

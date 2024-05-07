@@ -1,70 +1,87 @@
 /* chat.component.css */
 
 .chat {
-    overflow-y: auto;
-    max-height: 750px;
+  overflow-y: auto;
+  max-height: 750px;
 }
 
 .chat-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .message-container {
-    display: flex;
-    flex-direction: column; 
+  display: flex;
+  flex-direction: column;
 }
 
 .message {
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    max-width: 70%;
-    word-wrap: break-word;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  max-width: 70%;
+  word-wrap: break-word;
 }
 
 .user-message {
-    align-self: flex-start;
-    background-color: #2e2b2b;
+  align-self: flex-start;
+  background-color: #2e2b2b;
 }
 
 .bot-message {
-    align-self: flex-end;
-    background-color: #9ad8a8;
-    color: #383434;
+  align-self: flex-end;
+  background-color: #9ad8a8;
+  color: #383434;
 }
 
 .sender-name {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .fondo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .message-input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .message-input input {
-    width: 50%;
-    padding: 10px;
-    border-radius: 5px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .message-input button {
-    margin-left: 10px;
-    background-color: transparent; 
-    border: none; 
-    box-shadow: none;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .black-icons {
-    color: black;
+  color: black;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.centered-image {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.message-image img {
+  max-width: 20%;
+  max-height: 20%;
 }
